@@ -19,7 +19,7 @@ Add this to your vimrc:
 
     execute pathogen#infect()
 
-## clone
+## Clone
 `git clone --recursive https://github.com/ninjacn/vimrc.git`
 
 ## 通过软链连接vim配置文件和插件目录
@@ -29,3 +29,6 @@ Add this to your vimrc:
 ## 添加插件-submodule
     cd ~/.vim/bundle && \
     git submodule add git://github.com/tpope/vim-sensible.git
+
+## Update
+`git submodule update`
