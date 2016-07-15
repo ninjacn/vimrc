@@ -27,3 +27,5 @@ Add this to your vimrc:
     cd ~/.vim/bundle && \
     git submodule add git://github.com/tpope/vim-sensible.git
 
+## clone
+`git clone --recursive https://github.com/ninjacn/vimrc.git`
