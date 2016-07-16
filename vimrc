@@ -3,6 +3,7 @@ execute pathogen#infect()
 let mapleader = ","
 nnoremap <silent><Leader>w <Esc>:w<CR>
 nnoremap <silent><Leader>q <Esc>:q<CR>
+nmap <leader>t :call SearchWord()<CR>
 
 syntax enable
 

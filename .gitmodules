@@ -22,3 +22,6 @@
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = https://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/vim-sdcv"]
+	path = bundle/vim-sdcv
+	url = https://github.com/ninjacn/vim-sdcv.git
