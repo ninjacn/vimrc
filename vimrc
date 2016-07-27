@@ -13,6 +13,9 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set listchars=eol:$,tab:>-
 "set list
 
+"highlight
+set hlsearch
+
 set nocompatible
 set hidden
 set clipboard=unnamed
@@ -26,6 +29,8 @@ set spell spelllang=en_us
 "folding
 "set foldmethod=syntax
 
+set autoread
+
 "swap
 set dir=~/tmp
 
@@ -36,7 +41,7 @@ set background=dark
 
 "solarized
 colorscheme solarized
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 
 "airline
 set laststatus=2
