@@ -31,4 +31,4 @@ Add this to your vimrc:
     git submodule add git://github.com/tpope/vim-sensible.git
 
 ## Update
-`git submodule update`
+`git submodule update --init --recursive`
