@@ -16,6 +16,8 @@ set listchars=eol:$,tab:>-
 "highlight
 set hlsearch
 
+set cursorline
+
 set nocompatible
 set hidden
 set clipboard=unnamed
