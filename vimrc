@@ -78,3 +78,13 @@ endif
 let g:CtrlSpaceLoadLastWorkspaceOnStart = 1 
 let g:CtrlSpaceSymbols = { "File": "◯" }
 nnoremap <silent><C-p> :CtrlSpace O<CR>
+
+"autotag
+let g:autotagTagsFile=".tags"
+let g:autotagCtagsCmd="ctags-php"
+
+"tagbar
+nnoremap <Leader>s :TagbarToggle<CR>
+
+"PIV
+let g:DisableAutoPHPFolding = 1
