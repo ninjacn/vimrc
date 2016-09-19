@@ -26,7 +26,7 @@ filetype plugin indent on
 
 set backspace=indent,eol,start
 
-set spell spelllang=en_us
+"set spell spelllang=en_us
 
 "folding
 "set foldmethod=syntax
