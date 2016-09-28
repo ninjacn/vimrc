@@ -33,8 +33,13 @@ set backspace=indent,eol,start
 
 set autoread
 
-"swap
-set dir=~/tmp
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Darwin"
+    silent !mkdir ~/tmp > /dev/null 2>&1
+	set dir=~/tmp
+elseif os == "Linux"
+	set dir=/tmp
+endif
 
 "ctags
 set tags+=.tags
