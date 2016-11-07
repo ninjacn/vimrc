@@ -75,6 +75,9 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_php_checkers = ['php']
 let g:syntastic_php_phpcs_args = "--standard=PSR1" 
+let g:syntastic_mode_map={ 'mode': 'active',
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['html','xhtml'] }
 
 "ctrlspace
 if executable("ag")
@@ -84,9 +87,7 @@ let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
 let g:CtrlSpaceSymbols = { "File": "◯" }
 nnoremap <silent><C-p> :CtrlSpace O<CR>
 
-"autotag
-let g:autotagTagsFile=".tags"
-let g:autotagCtagsCmd="ctags-php"
+au BufWritePost *.php silent! !ctags -R --fields=+laimS --languages=php -f .tags &
 
 "tagbar
 nnoremap <Leader>s :TagbarToggle<CR>
