@@ -32,3 +32,9 @@ Add this to your vimrc:
 
 ## Update
 `git submodule update --init --recursive`
+
+## Delete submodule
+`git delete-submodule bundle/vim-snipmate`
+
+## Display submodule status
+`git submodule status`
