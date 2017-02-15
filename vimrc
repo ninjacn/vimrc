@@ -56,16 +56,19 @@ set background=dark
 
 "solarized
 colorscheme solarized
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 
 "airline
 set laststatus=2
 set ttimeoutlen=50
 let g:airline#extensions#whitespace#show_message = 0
+let g:airline#extensions#syntastic#enabled = 0
+let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline_exclude_preview = 1
 let g:airline_powerline_fonts = 0
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
+set fillchars=stl:+,stlnc:-
 
 "NERDTree
 let NERDTreeShowHidden=1
@@ -104,3 +107,4 @@ nnoremap <Leader>s :TagbarToggle<CR>
 "SuperTab
 let g:SuperTabContextTextFileTypeExclusions = ['html','javascript']
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
