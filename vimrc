@@ -3,7 +3,8 @@ execute pathogen#infect()
 let mapleader = ","
 nnoremap <silent><Leader>w <Esc>:w<CR>
 nnoremap <silent><Leader>q <Esc>:q<CR>
-nmap <leader>t :call SearchWord()<CR>
+"find
+nmap <leader>f :call SearchWord()<CR>
 inoremap <Leader><Tab> <C-V><Tab>
 
 syntax enable
@@ -91,14 +92,6 @@ let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html','xhtml'] }
 
-"ctrlspace
-if executable("ag")
-    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
-endif
-let g:CtrlSpaceLoadLastWorkspaceOnStart = 1 
-let g:CtrlSpaceSymbols = { "File": "◯" }
-nnoremap <silent><C-p> :CtrlSpace O<CR>
-
 "au BufWritePost *.php silent! !ctags -R --fields=+laimS --languages=php -f .tags &
 
 "tagbar
@@ -108,3 +101,4 @@ nnoremap <Leader>s :TagbarToggle<CR>
 let g:SuperTabContextTextFileTypeExclusions = ['html','javascript']
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
+"Command-T

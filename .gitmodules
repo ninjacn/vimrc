@@ -13,9 +13,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vim-ctrlspace"]
-	path = bundle/vim-ctrlspace
-	url = https://github.com/vim-ctrlspace/vim-ctrlspace.git
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = https://github.com/shawncplus/phpcomplete.vim.git
@@ -43,3 +40,9 @@
 [submodule "bundle/vim-php-manual"]
 	path = bundle/vim-php-manual
 	url = https://github.com/alvan/vim-php-manual.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
