@@ -1,8 +1,12 @@
+# Install
+
 ## Clone
 `git clone --recursive https://github.com/ninjacn/vimrc.git`
 
 ## 通过软链连接vim目录
 `ln -s ../vimrc ~/.vim`
+
+# 常用操作
 
 ## 添加插件-submodule
     cd ~/.vim/bundle && \
