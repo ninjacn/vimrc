@@ -22,7 +22,7 @@ xnoremap p pgvy
 set hlsearch
 
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 set nocompatible
 set hidden
@@ -78,12 +78,14 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+
 "let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 let g:syntastic_php_checkers = ['php']
 let g:syntastic_php_phpcs_args = "--standard=PSR1" 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html','xhtml'] }
+                     \ 'passive_filetypes': ['html','xhtml','go'] }
 
 "au BufWritePost *.php silent! !ctags -R --fields=+laimS --languages=php -f .tags &
 
@@ -95,3 +97,11 @@ let g:SuperTabContextTextFileTypeExclusions = ['html','javascript']
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 "Command-T
+"
+"vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
