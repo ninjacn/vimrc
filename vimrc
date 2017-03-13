@@ -97,7 +97,8 @@ let g:SuperTabContextTextFileTypeExclusions = ['html','javascript']
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 "Command-T
-"
+let g:CommandTMaxHeight = 0
+
 "vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
