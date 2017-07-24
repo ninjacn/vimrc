@@ -26,7 +26,6 @@ set cursorline
 
 set nocompatible
 set hidden
-set clipboard=unnamed
 
 filetype plugin indent on
 
@@ -36,6 +35,16 @@ set backspace=indent,eol,start
 set re=1
 
 "set spell spelllang=en_us
+
+if has("unix")
+    set clipboard=unnamedplus
+    let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol='x'
+endif
+
+if has("mac")
+    set clipboard=unnamed
+endif
+
 
 "folding
 "set foldmethod=syntax
@@ -132,3 +141,7 @@ call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
 call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
 call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
 call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
+
+if exists("g:loaded_webdevicons")
+    call webdevicons#refresh()
+endif
