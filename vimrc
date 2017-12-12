@@ -48,6 +48,7 @@ endif
 
 "folding
 "set foldmethod=syntax
+"let g:DisableAutoPHPFolding = 1
 
 set autoread
 
@@ -66,7 +67,7 @@ set laststatus=2
 set ttimeoutlen=50
 let g:airline#extensions#whitespace#show_message = 0
 let g:airline#extensions#syntastic#enabled = 0
-let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tagbar#enabled = 0
 let g:airline#extensions#branch#enabled = 1
 let g:airline_exclude_preview = 1
 let g:airline_powerline_fonts = 0
