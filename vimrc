@@ -13,7 +13,8 @@ set number
 "syntax slow
 "set relativenumber
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
-set listchars=eol:$,tab:>-
+set showbreak=↪\
+set listchars=eol:¶,tab:>-,trail:∙,nbsp:•
 "set list
 
 xnoremap p pgvy
@@ -22,7 +23,7 @@ xnoremap p pgvy
 set hlsearch
 
 set cursorline
-"set cursorcolumn
+set cursorcolumn
 
 set nocompatible
 set hidden
