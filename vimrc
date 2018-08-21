@@ -68,12 +68,15 @@ set laststatus=2
 set ttimeoutlen=50
 let g:airline#extensions#whitespace#show_message = 0
 let g:airline#extensions#syntastic#enabled = 0
-let g:airline#extensions#tagbar#enabled = 0
+let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline_exclude_preview = 1
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 0
 set fillchars=stl:+,stlnc:-
+
+"airline theme
+"let g:airline_theme='papercolor'
 
 "NERDTree
 let NERDTreeShowHidden=1
@@ -147,3 +150,8 @@ call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
 if exists("g:loaded_webdevicons")
     call webdevicons#refresh()
 endif
+
+"Jedi
+let g:jedi#use_tabs_not_buffers = 1
+"不与NERDTree冲突
+let g:jedi#goto_command = "<leader>0"
