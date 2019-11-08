@@ -1,4 +1,4 @@
-execute pathogen#infect()
+call pathogen#infect()
 
 let mapleader = ","
 nnoremap <silent><Leader>w <Esc>:w<CR>
@@ -7,7 +7,7 @@ nnoremap <silent><Leader>q <Esc>:q<CR>
 nmap <leader>f :call SearchWord()<CR>
 inoremap <Leader><Tab> <C-V><Tab>
 
-syntax enable
+syntax on
 
 set number 
 "syntax slow
@@ -80,8 +80,11 @@ set fillchars=stl:+,stlnc:-
 "let g:airline_theme='papercolor'
 
 "NERDTree
+autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 nnoremap <Leader>d :NERDTreeToggle<CR>
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
 
 "syntastic
 set statusline+=%#warningmsg#
