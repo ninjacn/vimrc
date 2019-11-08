@@ -23,7 +23,7 @@ xnoremap p pgvy
 set hlsearch
 
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 set nocompatible
 set hidden
@@ -152,6 +152,12 @@ if exists("g:loaded_webdevicons")
 endif
 
 "Jedi
-let g:jedi#use_tabs_not_buffers = 1
+"let g:jedi#auto_initialization = 1
+"let g:jedi#use_tabs_not_buffers = 1
 "不与NERDTree冲突
-let g:jedi#goto_command = "<leader>0"
+"let g:jedi#goto_command = "<leader>0"
+"
+"indentLine
+let g:indentLine_color_term = 239
+
+"phpcomplete-entended
