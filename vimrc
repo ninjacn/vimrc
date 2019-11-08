@@ -56,7 +56,8 @@ set autoread
 set noswapfile
 
 "ctags
-set tags+=.tags
+set tags+=./tags
+set notagbsearch
 
 set background=dark
 
@@ -158,6 +159,4 @@ endif
 "let g:jedi#goto_command = "<leader>0"
 "
 "indentLine
-let g:indentLine_color_term = 239
-
-"phpcomplete-entended
+let g:indentLine_color_term = 202
