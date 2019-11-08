@@ -79,13 +79,6 @@ set fillchars=stl:+,stlnc:-
 "airline theme
 "let g:airline_theme='papercolor'
 
-"NERDTree
-autocmd vimenter * NERDTree
-let NERDTreeShowHidden=1
-nnoremap <Leader>d :NERDTreeToggle<CR>
-"let g:NERDTreeDirArrowExpandable = '▸'
-"let g:NERDTreeDirArrowCollapsible = '▾'
-
 "syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -126,6 +119,12 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " NERDTress
+"autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
+nnoremap <Leader>d :NERDTreeToggle<CR>
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
+
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
