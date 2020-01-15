@@ -8,6 +8,11 @@ nmap <leader>f :call SearchWord()<CR>
 inoremap <Leader><Tab> <C-V><Tab>
 
 syntax on
+let g:go_highlight_structs = 1 
+let g:go_highlight_methods = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 set number 
 "syntax slow
@@ -161,4 +166,4 @@ endif
 "let g:jedi#goto_command = "<leader>0"
 "
 "indentLine
-let g:indentLine_color_term = 202
+let g:indentLine_color_term = 239
