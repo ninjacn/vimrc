@@ -86,7 +86,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_go_checkers = ['golint', 'go vet', 'errcheck']
@@ -97,6 +97,8 @@ let g:syntastic_php_phpcs_args = "--standard=PSR1"
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html','xhtml','go'] }
+
+let g:syntastic_python_checkers = []
 
 "au BufWritePost *.php silent! !ctags -R --fields=+laimS --languages=php -f .tags &
 
