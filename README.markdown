@@ -22,3 +22,4 @@ cd ~/.vim/bundle && \
 
 ## Display submodule status
 `git submodule status`
+
