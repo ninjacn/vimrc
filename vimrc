@@ -9,6 +9,10 @@ inoremap <Leader><Tab> <C-V><Tab>
 
 syntax on
 
+autocmd BufRead,BufNewFile *.json set ft=
+autocmd BufRead,BufNewFile *.vue hi clear
+"autocmd BufRead,BufNewFile *.json syntax off
+
 set number 
 "syntax slow
 "set relativenumber
